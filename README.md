@@ -61,8 +61,10 @@ history
 curl https://abc.example.com
 
 # Check network
-netstat -anpt 
+netstat -anpt
 ```
+
+[Back to top 🔝](#cli-command-reference)
 
 ## SSH Commands
 
@@ -76,6 +78,8 @@ ssh user@1.2.3.4
 # SSH to a server using key
 ssh -i user_key.pem user@1.2.3.4
 ```
+
+[Back to top 🔝](#cli-command-reference)
 
 ## Git Commands
 
@@ -104,6 +108,8 @@ git push origin new-branch
 # Reset staging area to match the lastest origin commit
 git reset origin/main
 ```
+
+[Back to top 🔝](#cli-command-reference)
 
 ## Docker Commands
 
@@ -142,6 +148,8 @@ docker exec -it container-name /bin/bash
 docker system prune
 ```
 
+[Back to top 🔝](#cli-command-reference)
+
 ## Kubernetes Commands
 
 ```bash
@@ -176,6 +184,8 @@ kubectl exec -it pod-name -- /bin/bash
 kubectl port-forward pod-name 8080:80
 ```
 
+[Back to top 🔝](#cli-command-reference)
+
 ## Helm Commands
 
 ```bash
@@ -206,3 +216,5 @@ helm status release-name
 # Show the history of a Helm release
 helm history release-name
 ```
+
+[Back to top 🔝](#cli-command-reference)
