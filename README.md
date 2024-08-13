@@ -124,6 +124,12 @@ jq '.' file.json | less
 ## Git Commands
 
 ```bash
+# Clone repo via HTTPS
+git clone https://github.com/org/repo.git
+
+# Clone repo via SSH
+git clone git@github.com:TheDevOpsHub/container-labs.git
+
 # Create a new branch
 git checkout -b new-branch
 
