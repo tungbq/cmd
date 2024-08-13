@@ -18,6 +18,7 @@ This repository is a collection of the most commonly used command-line commands 
 - [Kubernetes Commands](#kubernetes-commands)
 - [Helm Commands](#helm-commands)
 - [Ansible Commands](#ansible-commands)
+- [Terraform Commands](#terraform-commands)
 
 ---
 
@@ -278,6 +279,45 @@ ansible-inventory --list -i inventory.ini
 
 # Run an Ansible playbook with increased verbosity
 ansible-playbook playbook.yml -vvv
+```
+
+[Back to top 🔝](#cli-commands-reference)
+
+## Terraform Commands
+
+```bash
+# Initialize a Terraform configuration directory
+terraform init
+
+# Plan the changes required by the Terraform configuration
+terraform plan
+
+# Create a Terraform execution plan and save it to a file (recommended)
+terraform plan -out=tfplan.out
+
+# Apply the changes required by the Terraform configuration
+terraform apply
+
+# Apply the changes automatically (use with your own risk, suitable for automation tasks)
+terraform apply --auto-aprove
+
+# Destroy all the resources managed by Terraform
+terraform destroy
+
+# Validate the Terraform configuration files
+terraform validate
+
+# Format Terraform configuration files
+terraform fmt
+
+# Show the current state of Terraform-managed infrastructure
+terraform show
+
+# Refresh the state file with the real infrastructure
+terraform refresh
+
+# List the available Terraform providers
+terraform providers
 ```
 
 [Back to top 🔝](#cli-commands-reference)
