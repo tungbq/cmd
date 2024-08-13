@@ -25,6 +25,7 @@ cat /etc/os-release
 systemctl status target_service
 systemctl start target_service
 systemctl stop target_service
+journalctl -u target_service
 
 # Change file mode
 chmod +x some_file.sh
@@ -58,6 +59,9 @@ history
 
 # CURL, add '-k' to ignore certificate verification
 curl https://abc.example.com
+
+# Check network
+netstat -anpt 
 ```
 
 ## SSH Commands
