@@ -195,13 +195,13 @@ docker system prune
 
 ## Docker Compose
 # Start up containers as defined in the Docker Compose file
-docker-compose up
+docker compose up
 
 # Start up containers in detached mode
-docker-compose up -d
+docker compose up -d
 
 # Stop running containers
-docker-compose down
+docker compose down
 ```
 
 [Back to top 🔝](#cli-commands-reference)
