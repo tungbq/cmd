@@ -26,11 +26,17 @@ This repository is a collection of the most commonly used command-line commands 
 ## Linux Commands
 
 ```bash
+# Clear terminal output
+clear
+
 # List files in the current directory with details
 ls -la
 
+# Check system stats
 df -h
 cat /etc/os-release
+cat /proc/meminfo
+nproc
 
 # Working with linux service
 systemctl status target_service
@@ -43,6 +49,9 @@ chmod +x some_file.sh
 
 # Change directory owner
 chown 0600 /path/to/directory
+
+# Create new directory
+mkdir -p /path/to/directory
 
 # Change directory
 cd /path/to/directory
