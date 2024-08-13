@@ -1,6 +1,8 @@
 # CLI Command Reference
 
 This repository is a collection of the most commonly used command-line commands for daily tasks.
+<br>
+🔖 https://tungbq.github.io/cmd
 
 ## Table of Contents
 
