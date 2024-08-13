@@ -119,6 +119,9 @@ docker images
 
 # Enter a running container's shell
 docker exec -it container-name /bin/bash
+
+# Cleanup docker (add `-f` flag to force cleanup)
+docker system prune
 ```
 
 ## Kubernetes Commands
