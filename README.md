@@ -67,6 +67,9 @@ curl https://abc.example.com
 
 # Check network
 netstat -anpt
+
+# Check system metric (CPU/RAM/...)
+top
 ```
 
 [Back to top 🔝](#cli-command-reference)
