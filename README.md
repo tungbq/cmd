@@ -5,6 +5,7 @@ This repository is a collection of the most commonly used command-line commands 
 ## Table of Contents
 
 - [Linux Commands](#linux-commands)
+- [SSH Commands](#ssh-commands)
 - [Git Commands](#git-commands)
 - [Docker Commands](#docker-commands)
 - [Kubernetes Commands](#kubernetes-commands)
@@ -57,6 +58,19 @@ history
 
 # CURL, add '-k' to ignore certificate verification
 curl https://abc.example.com
+```
+
+## SSH Commands
+
+```bash
+# Generate SSH keys
+ssh-keygen -t rsa
+
+# SSH to a server using username/password
+ssh user@1.2.3.4
+
+# SSH to a server using key
+ssh -i user_key.pem user@1.2.3.4
 ```
 
 ## Git Commands
