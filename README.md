@@ -6,6 +6,7 @@ This repository is a collection of the most commonly used command-line commands 
 
 - [Linux Commands](#linux-commands)
 - [SSH Commands](#ssh-commands)
+- [JQ Commands](#jq-commands)
 - [Git Commands](#git-commands)
 - [Docker Commands](#docker-commands)
 - [Kubernetes Commands](#kubernetes-commands)
@@ -61,7 +62,7 @@ history
 curl https://abc.example.com
 
 # Check network
-netstat -anpt 
+netstat -anpt
 ```
 
 ## SSH Commands
@@ -75,6 +76,28 @@ ssh user@1.2.3.4
 
 # SSH to a server using key
 ssh -i user_key.pem user@1.2.3.4
+```
+
+## JQ Commands
+
+```bash
+# Pretty-print JSON data
+jq '.'
+
+# Extract a specific field from a JSON object
+jq '.fieldName' file.json
+
+# Filter JSON data by a specific condition
+jq 'select(.fieldName == "value")' file.json
+
+# Parse JSON from an API response
+curl -s http://api.example.com/data | jq '.'
+
+# Flatten a nested JSON structure
+jq '.[].nestedField' file.json
+
+# Format JSON output into a more readable structure
+jq '.' file.json | less
 ```
 
 ## Git Commands
