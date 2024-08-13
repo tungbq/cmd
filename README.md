@@ -1,9 +1,12 @@
-# CLI Command Reference
+# CLI Commands Reference
+
 ## Overview
-This repository is a collection of the most commonly used command-line commands for daily tasks.
+
+This repository is a collection of the most commonly used command-line commands for daily work.
 <br>
+
 - Source code: [https://github.com/tungbq/cmd](https://github.com/tungbq/cmd)
-- Contribution are welcome 👋, please checkout this [guide]([./CONTRIBUTING.md](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md))
+- Contribution are welcome 👋, please checkout this [guide](<[./CONTRIBUTING.md](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md)>)
 
 ## Table of Contents
 
@@ -14,6 +17,7 @@ This repository is a collection of the most commonly used command-line commands 
 - [Docker Commands](#docker-commands)
 - [Kubernetes Commands](#kubernetes-commands)
 - [Helm Commands](#helm-commands)
+- [Ansible Commands](#ansible-commands)
 
 ---
 
@@ -72,7 +76,7 @@ netstat -anpt
 top
 ```
 
-[Back to top 🔝](#cli-command-reference)
+[Back to top 🔝](#cli-commands-reference)
 
 ## SSH Commands
 
@@ -90,7 +94,7 @@ ssh -i user_key.pem user@1.2.3.4
 ssh-copy-id user@1.2.3.4
 ```
 
-[Back to top 🔝](#cli-command-reference)
+[Back to top 🔝](#cli-commands-reference)
 
 ## JQ Commands
 
@@ -114,7 +118,7 @@ jq '.[].nestedField' file.json
 jq '.' file.json | less
 ```
 
-[Back to top 🔝](#cli-command-reference)
+[Back to top 🔝](#cli-commands-reference)
 
 ## Git Commands
 
@@ -144,7 +148,7 @@ git push origin new-branch
 git reset origin/main
 ```
 
-[Back to top 🔝](#cli-command-reference)
+[Back to top 🔝](#cli-commands-reference)
 
 ## Docker Commands
 
@@ -183,7 +187,7 @@ docker exec -it container-name /bin/bash
 docker system prune
 ```
 
-[Back to top 🔝](#cli-command-reference)
+[Back to top 🔝](#cli-commands-reference)
 
 ## Kubernetes Commands
 
@@ -219,7 +223,7 @@ kubectl exec -it pod-name -- /bin/bash
 kubectl port-forward pod-name 8080:80
 ```
 
-[Back to top 🔝](#cli-command-reference)
+[Back to top 🔝](#cli-commands-reference)
 
 ## Helm Commands
 
@@ -252,5 +256,28 @@ helm status release-name
 helm history release-name
 ```
 
-[Back to top 🔝](#cli-command-reference)
+[Back to top 🔝](#cli-commands-reference)
 
+## Ansible Commands
+
+```bash
+# Run an Ansible playbook
+ansible-playbook playbook.yml -i inventory.ini
+
+# Run a single Ansible ad-hoc command
+ansible all -m ping
+
+# List all available Ansible roles
+ansible-galaxy list
+
+# Install a role from Ansible Galaxy
+ansible-galaxy install role-name
+
+# Test an Ansible inventory file
+ansible-inventory --list -i inventory.ini
+
+# Run an Ansible playbook with increased verbosity
+ansible-playbook playbook.yml -vvv
+```
+
+[Back to top 🔝](#cli-commands-reference)
