@@ -23,6 +23,7 @@ ls -la
 df -h
 cat /etc/os-release
 
+# Working with linux service
 systemctl status target_service
 systemctl start target_service
 systemctl stop target_service
