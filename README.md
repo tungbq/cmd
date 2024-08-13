@@ -79,6 +79,9 @@ ssh user@1.2.3.4
 
 # SSH to a server using key
 ssh -i user_key.pem user@1.2.3.4
+
+# Use locally available keys to authorise logins on a remote machine
+ssh-copy-id user@1.2.3.4
 ```
 
 [Back to top 🔝](#cli-command-reference)
