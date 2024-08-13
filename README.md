@@ -2,11 +2,8 @@
 ## Overview
 This repository is a collection of the most commonly used command-line commands for daily tasks.
 <br>
-- Source code: https://github.com/tungbq/cmd
-- 🔖 [https://tungbq.github.io/cmd](https://tungbq.github.io/cmd)
-
-## Contributing
-Contribution are welcome 👋, please checkout this guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+- Source code: [https://github.com/tungbq/cmd](https://github.com/tungbq/cmd)
+- Contribution are welcome 👋, please checkout this [guide]([./CONTRIBUTING.md](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md))
 
 ## Table of Contents
 
