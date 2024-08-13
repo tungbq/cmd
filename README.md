@@ -1,8 +1,12 @@
 # CLI Command Reference
-
+## Overview
 This repository is a collection of the most commonly used command-line commands for daily tasks.
 <br>
-🔖 https://tungbq.github.io/cmd
+- Source code: https://github.com/tungbq/cmd
+- 🔖 [https://tungbq.github.io/cmd](https://tungbq.github.io/cmd)
+
+## Contributing
+Contribution are welcome 👋, please checkout this guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Table of Contents
 
@@ -249,3 +253,4 @@ helm history release-name
 ```
 
 [Back to top 🔝](#cli-command-reference)
+
