@@ -292,11 +292,14 @@ terraform init
 # Plan the changes required by the Terraform configuration
 terraform plan
 
-# Create a Terraform execution plan and save it to a file (recommended)
-terraform plan -out=tfplan.out
-
 # Apply the changes required by the Terraform configuration
 terraform apply
+
+# Create a Terraform execution plan and save it to a file (recommended)
+terraform plan -out="tfplan.out"
+
+# Apply the changes from saved plan
+terraform apply "tfplan.out"
 
 # Apply the changes automatically (use with your own risk, suitable for automation tasks)
 terraform apply --auto-aprove
