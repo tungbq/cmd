@@ -8,6 +8,7 @@ This repository is a collection of the most commonly used command-line commands 
 - [Git Commands](#git-commands)
 - [Docker Commands](#docker-commands)
 - [Kubernetes Commands](#kubernetes-commands)
+- [Helm Commands](#helm-commands)
 
 ---
 
@@ -152,4 +153,35 @@ kubectl exec -it pod-name -- /bin/bash
 
 # Forward a port from a pod to the local machine
 kubectl port-forward pod-name 8080:80
+```
+
+## Helm Commands
+
+```bash
+# Add a Helm repository
+helm repo add repo-name https://example.com/repo
+
+# Update all Helm repositories
+helm repo update
+
+# Search for charts in a Helm repository
+helm search repo repo-name
+
+# Install a Helm chart
+helm install release-name repo-name/chart-name
+
+# List all Helm releases across all namespaces
+helm list --all-namespaces
+
+# Uninstall a Helm release
+helm uninstall release-name
+
+# Upgrade an existing Helm release
+helm upgrade release-name repo-name/chart-name
+
+# Get the status of a Helm release
+helm status release-name
+
+# Show the history of a Helm release
+helm history release-name
 ```
