@@ -19,6 +19,7 @@ This repository is a collection of the most commonly used command-line commands 
 - [Helm Commands](#helm-commands)
 - [Ansible Commands](#ansible-commands)
 - [Terraform Commands](#terraform-commands)
+- [PostgreSQL Commands](#postgresql-commands)
 
 ---
 
@@ -337,6 +338,48 @@ terraform refresh
 
 # List the available Terraform providers
 terraform providers
+```
+
+[Back to top 🔝](#cli-commands-reference)
+
+## PostgreSQL Commands
+
+```bash
+# Connect to a PostgreSQL database
+psql -h hostname -U username -d database_name
+
+# List all databases
+psql -c "\l"
+
+# List all tables in the current database
+psql -c "\dt"
+
+# Show the structure of a specific table
+psql -c "\d table_name"
+
+# Create a new database
+createdb new_database_name
+
+# Drop an existing database
+dropdb database_name
+
+# Create a new user
+createuser new_user_name
+
+# Drop an existing user
+dropuser user_name
+
+# Grant all privileges on a database to a user
+psql -c "GRANT ALL PRIVILEGES ON DATABASE database_name TO user_name"
+
+# Revoke all privileges on a database from a user
+psql -c "REVOKE ALL PRIVILEGES ON DATABASE database_name FROM user_name"
+
+# Backup a PostgreSQL database to a file
+pg_dump database_name > backup_file.sql
+
+# Restore a PostgreSQL database from a backup file
+psql database_name < backup_file.sql
 ```
 
 [Back to top 🔝](#cli-commands-reference)
