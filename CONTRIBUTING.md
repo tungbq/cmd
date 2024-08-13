@@ -4,7 +4,7 @@ The following information provides a set of guidelines for contributing to the t
 
 ## First steps
 
-The first step is to find an issue you want to fix. To identify issues we think are good for first-time contributors, we add the **good first issue** label.
+The first step is to find an **issue** you want to fix. To identify issues we think are good for first-time contributors, we add the **good first issue** label.
 Once you find an existing issue that you want to work on or if you have a new issue to create, continue below.
 
 ## Proposing changes
