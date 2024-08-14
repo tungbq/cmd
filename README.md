@@ -4,9 +4,7 @@
 
 This repository is a collection of the most commonly used command-line commands for daily work.
 <br>
-
-- Source code: [tungbq/cmd](https://github.com/tungbq/cmd)
-- Contribution are welcome 👋, please checkout this [guide](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md)
+Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ [contributing guide](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
 
 ## Table of Contents
 
