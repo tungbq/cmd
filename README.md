@@ -429,6 +429,9 @@ pip install -r requirements.txt
 # Login to Azure
 az login
 
+# Login with device code
+az login --use-device-code
+
 # Get the details of a subscription
 az account show
 
