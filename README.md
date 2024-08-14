@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository is a collection of the most commonly used command-line commands for daily work.
+This repository is a collection of the most commonly used command-line commands for a software engineer's daily work 📑
 <br>
 Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ Contributing guideline: [here](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
 
