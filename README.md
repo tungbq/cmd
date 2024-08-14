@@ -217,6 +217,9 @@ docker compose down
 ## Kubernetes Commands
 
 ```bash
+# Export KUBECONFIG to access the cluster
+export KUBECONFIG=/path/to/kubeconfig.conf
+
 # Check nodes
 kubectl get nodes
 
