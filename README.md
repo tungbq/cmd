@@ -18,6 +18,7 @@ Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ Contributing guidel
 - [Ansible Commands](#ansible-commands)
 - [Terraform Commands](#terraform-commands)
 - [PostgreSQL Commands](#postgresql-commands)
+- [Python Commands](#python-commands)
 
 ---
 
@@ -390,6 +391,42 @@ pg_dump database_name > backup_file.sql
 
 # Restore a PostgreSQL database from a backup file
 psql database_name < backup_file.sql
+```
+
+[Back to top 🔝](#cli-commands-reference)
+
+## Python Commands
+
+```bash
+# Check the installed Python version
+python --version
+
+# Run a python script
+python python_script.py
+
+# Check the installed pip version
+pip --version
+
+# Install a package using pip
+pip install package-name
+
+# Install a specific version of a package
+pip install package-name==1.2.3
+
+# Uninstall a package
+pip uninstall package-name
+
+# List all installed packages
+pip list
+
+# Show details of a specific package
+pip show package-name
+
+# Freeze installed packages into a requirements file
+pip freeze > requirements.txt
+
+# Install packages from a requirements file
+pip install -r requirements.txt
 ```
 
 [Back to top 🔝](#cli-commands-reference)
