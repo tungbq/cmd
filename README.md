@@ -6,7 +6,7 @@ This repository collects essential command-line commands for a software engineer
 <br>
 Source code: [**tungbq/cmd**](https://github.com/tungbq/cmd) ⭐ Contributing guideline: [**here**](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
 <br>
-Website: **https://tungbq.github.io/cmd**
+Website: [**https://tungbq.github.io/cmd**](https://tungbq.github.io/cmd)
 ## Table of Contents
 
 - [Linux Commands](#linux-commands)
