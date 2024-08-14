@@ -91,6 +91,13 @@ netstat -anpt
 
 # Check system metric (CPU/RAM/...)
 top
+
+# Tar
+tar -cvf sampleArchive.tar /home/sampleArchive
+
+# Extract
+tar -xvf sampleArchive.tar
+tar -xvf sampleArchive.tar.gz -C /home/ExtractedFiles/
 ```
 
 [Back to top 🔝](#cli-commands-reference)
