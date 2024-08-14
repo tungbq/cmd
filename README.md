@@ -80,6 +80,12 @@ history
 # CURL, add '-k' to ignore certificate verification
 curl https://abc.example.com
 
+# wget - Download a file from a URL
+wget http://example.com/file.zip
+
+# wget - Download a file and save it with a different name
+wget -O newfile.zip http://example.com/file.zip
+
 # Check network
 netstat -anpt
 
