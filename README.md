@@ -449,15 +449,6 @@ az account set --subscription "SUBSCRIPTION_ID"
 
 # List all resource groups
 az group list --output table
-
-# List all virtual machines in a resource group
-az vm list --resource-group "RESOURCE_GROUP_NAME" --output table
-
-# List all storage accounts in a subscription
-az storage account list --output table
-
-# Logout from Azure
-az logout
 ```
 
 [Back to top 🔝](#cli-commands-reference)
