@@ -1,10 +1,14 @@
+<head>
+  <link rel="shortcut icon" type="image/png" href="./assets/cmd.png">
+</head>
+
 # CLI Commands Reference
 
 ## Overview
 
 This repository is a collection of the most commonly used command-line commands for daily work.
 <br>
-Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ Contributing guideline:  [here](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
+Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ Contributing guideline: [here](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
 
 ## Table of Contents
 
