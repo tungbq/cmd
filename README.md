@@ -19,6 +19,7 @@ Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ Contributing guidel
 - [Terraform Commands](#terraform-commands)
 - [PostgreSQL Commands](#postgresql-commands)
 - [Python Commands](#python-commands)
+- [Azure CLI Commands](#azure-cli-commands)
 
 ---
 
@@ -427,6 +428,27 @@ pip freeze > requirements.txt
 
 # Install packages from a requirements file
 pip install -r requirements.txt
+```
+
+[Back to top 🔝](#cli-commands-reference)
+
+## Azure CLI Commands
+
+```bash
+# Login to Azure
+az login
+
+# Get the details of a subscription
+az account show
+
+# List all subscriptions associated with your account
+az account list --output table
+
+# Set a specific subscription as default
+az account set --subscription "SUBSCRIPTION_ID"
+
+# List all resource groups
+az group list --output table
 ```
 
 [Back to top 🔝](#cli-commands-reference)
