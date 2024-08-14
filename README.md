@@ -4,7 +4,7 @@
 
 This repository is a collection of the most commonly used command-line commands for daily work.
 <br>
-Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ [contributing guide](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
+Source code: [tungbq/cmd](https://github.com/tungbq/cmd) ⭐ Contributing guideline:  [here](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
 
 ## Table of Contents
 
@@ -133,10 +133,10 @@ jq '.' file.json | less
 
 ```bash
 # Clone repo via HTTPS
-git clone https://github.com/org/repo.git
+git clone https://github.com/REPO_OWNER/repo.git
 
 # Clone repo via SSH
-git clone git@github.com:TheDevOpsHub/container-labs.git
+git clone git@github.com:REPO_OWNER/repo.git
 
 # Create a new branch
 git checkout -b new-branch
