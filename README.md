@@ -1,5 +1,5 @@
 <head>
-  <link rel="shortcut icon" type="image/png" href="./assets/cmd.png">
+  <link rel="shortcut icon" type="image/png" href="/assets/cmd.png">
 </head>
 
 # CLI Commands Reference
