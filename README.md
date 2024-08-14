@@ -399,14 +399,8 @@ psql database_name < backup_file.sql
 ## Python Commands
 
 ```bash
-# Check the installed Python version
-python --version
-
 # Run a python script
 python python_script.py
-
-# Check the installed pip version
-pip --version
 
 # Install a package using pip
 pip install package-name
@@ -419,9 +413,6 @@ pip uninstall package-name
 
 # List all installed packages
 pip list
-
-# Show details of a specific package
-pip show package-name
 
 # Freeze installed packages into a requirements file
 pip freeze > requirements.txt
