@@ -95,6 +95,10 @@ tar -cvf sampleArchive.tar /home/sampleArchive
 # Extract
 tar -xvf sampleArchive.tar
 tar -xvf sampleArchive.tar.gz -C /home/ExtractedFiles/
+
+# Control file content
+echo "first line" > file.txt
+echo "second line" >> file.txt
 ```
 
 [Back to top 🔝](#cli-commands-reference)
