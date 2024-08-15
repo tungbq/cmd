@@ -85,6 +85,9 @@ wget -O newfile.zip http://example.com/file.zip
 
 # Check network
 netstat -anpt
+ping google.com
+nslookup google.com
+tracepath google.com
 
 # Check system metric (CPU/RAM/...)
 top
@@ -99,6 +102,7 @@ tar -xvf sampleArchive.tar.gz -C /home/ExtractedFiles/
 # Control file content
 echo "first line" > file.txt
 echo "second line" >> file.txt
+
 ```
 
 [Back to top 🔝](#cli-commands-reference)
