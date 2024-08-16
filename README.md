@@ -152,6 +152,13 @@ jq '.' file.json | less
 ## Git Commands
 
 ```bash
+# Configure git info, remove '--global' flag if you want to config for project only
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# Verify
+git config -l
+
 # Clone repo via HTTPS
 git clone https://github.com/REPO_OWNER/repo.git
 
@@ -167,8 +174,9 @@ git pull origin main
 # Check the status of your working directory
 git status
 
-# Add all changes to the staging area
+# Add changes to the staging area
 git add .
+git add file_name1 file_name2 folder_name1
 
 # Commit changes with a message
 git commit -m "Your commit message"
