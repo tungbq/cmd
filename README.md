@@ -43,9 +43,10 @@ journalctl -u target_service
 
 # Change file mode
 chmod +x some_file.sh
+chmod 0600 /path/to/directory
 
 # Change directory owner
-chown 0600 /path/to/directory
+sudo chown -R user:user folder
 
 # Create new directory
 mkdir -p /path/to/directory
