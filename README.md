@@ -23,6 +23,8 @@ A bookmark of essential command-line commands for a software engineer's daily ta
 ## Linux Commands
 
 ```bash
+# TIPS: Press `Ctrl + R` to find your previous commands.
+
 # Clear terminal output
 clear
 
