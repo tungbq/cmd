@@ -106,6 +106,10 @@ tar -xvf sampleArchive.tar.gz -C /home/ExtractedFiles/
 echo "first line" > file.txt
 echo "second line" >> file.txt
 
+# SCP commands
+scp -r username@IP:/path/on/remote /path/on/local
+scp -r -i /path/to/key.pem username@IP:/path/on/remote /path/on/local
+scp -r -P 12345 -i /path/to/key.pem username@IP:/path/on/remote /path/on/local
 ```
 
 [Back to top 🔝](#cli-commands-reference)
