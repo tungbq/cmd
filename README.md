@@ -110,6 +110,9 @@ echo "second line" >> file.txt
 scp -r username@IP:/path/on/remote /path/on/local
 scp -r -i /path/to/key.pem username@IP:/path/on/remote /path/on/local
 scp -r -P 12345 -i /path/to/key.pem username@IP:/path/on/remote /path/on/local
+
+# DNS check
+dig domain.com
 ```
 
 [Back to top 🔝](#cli-commands-reference)
