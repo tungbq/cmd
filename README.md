@@ -474,6 +474,9 @@ az login --use-device-code
 # Get the details of a subscription
 az account show
 
+# Get subscription ID
+az account show --query id --output tsv
+
 # List all subscriptions associated with your account
 az account list --output table
 
