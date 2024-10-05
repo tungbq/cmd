@@ -485,6 +485,9 @@ az account set --subscription "SUBSCRIPTION_ID"
 
 # List all resource groups
 az group list --output table
+
+# List location
+az account list-locations
 ```
 
 [Back to top 🔝](#cli-commands-reference)
