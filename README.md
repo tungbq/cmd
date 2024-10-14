@@ -372,6 +372,9 @@ terraform apply "tfplan.out"
 # Apply the changes automatically (use with your own risk, suitable for automation tasks)
 terraform apply --auto-aprove
 
+# Apply with secret var
+terraform apply -var-file="secret.tfvars"
+
 # Destroy all the resources managed by Terraform
 terraform destroy
 
