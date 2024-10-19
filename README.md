@@ -172,6 +172,9 @@ git config -l
 # Clone repo via HTTPS
 git clone https://github.com/REPO_OWNER/repo.git
 
+# Clone with username
+git clone https://username@github.com/REPO_OWNER/repo.git
+
 # Clone repo via SSH
 git clone git@github.com:REPO_OWNER/repo.git
 
