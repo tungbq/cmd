@@ -17,6 +17,7 @@ A bookmark of essential command-line commands for a software engineer's daily ta
 - [PostgreSQL Commands](#postgresql-commands)
 - [Python Commands](#python-commands)
 - [Azure CLI Commands](#azure-cli-commands)
+- [Powershell Commands](#powershell-commands)
 
 ---
 
@@ -496,4 +497,72 @@ az group list --output table
 az account list-locations
 ```
 
+[Back to top 🔝](#cli-commands-reference)
+
+## PowerShell Commands
+```powershell
+# Get the current directory
+Get-Location
+
+# List files in the current directory with details
+Get-ChildItem -Force
+
+# Create a new directory
+New-Item -Path "C:\path\to\directory" -ItemType Directory
+
+# Remove a file
+Remove-Item -Path "C:\path\to\file.txt"
+
+# Copy a file
+Copy-Item -Path "C:\source\file.txt" -Destination "C:\destination\file.txt"
+
+# Move or rename a file
+Move-Item -Path "C:\path\to\oldname.txt" -Destination "C:\path\to\newname.txt"
+
+# Check the content of a file
+Get-Content -Path "C:\path\to\file.txt"
+
+# Write a line to a file (overwrites existing content)
+Set-Content -Path "C:\path\to\file.txt" -Value "This is the first line."
+
+# Append a line to a file
+Add-Content -Path "C:\path\to\file.txt" -Value "This is an appended line."
+
+# Search for a string in a file
+Select-String -Path "C:\path\to\file.txt" -Pattern "search-string"
+
+# Run a script with elevated privileges
+Start-Process powershell -Verb runAs -ArgumentList "-File C:\path\to\script.ps1"
+
+# Test network connection (ping)
+Test-Connection google.com
+
+# Download a file from a URL
+Invoke-WebRequest -Uri "https://example.com/file.zip" -OutFile "C:\path\to\file.zip"
+
+# Compress files into a ZIP archive
+Compress-Archive -Path "C:\path\to\folder\*" -DestinationPath "C:\path\to\archive.zip"
+
+# Extract files from a ZIP archive
+Expand-Archive -Path "C:\path\to\archive.zip" -DestinationPath "C:\path\to\extract"
+
+# Get system information
+Get-ComputerInfo
+
+# Check the status of a service
+Get-Service -Name "ServiceName"
+
+# Start a service
+Start-Service -Name "ServiceName"
+
+# Stop a service
+Stop-Service -Name "ServiceName"
+
+# Restart a service
+Restart-Service -Name "ServiceName"
+
+# List installed software
+Get-WmiObject -Class Win32_Product | Select-Object -Property Name, Version
+```
+ 
 [Back to top 🔝](#cli-commands-reference)
