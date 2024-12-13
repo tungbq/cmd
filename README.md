@@ -513,6 +513,9 @@ New-Item -Path "C:\path\to\directory" -ItemType Directory
 # Remove a file
 Remove-Item -Path "C:\path\to\file.txt"
 
+# Display a message in the console
+Write-Host "This is a message displayed in the console."
+
 # Copy a file
 Copy-Item -Path "C:\source\file.txt" -Destination "C:\destination\file.txt"
 
