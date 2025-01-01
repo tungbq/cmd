@@ -44,6 +44,9 @@ systemctl start target_service
 systemctl stop target_service
 journalctl -u target_service
 
+# Reload config without restarting the service
+systemctl reload target_service
+
 # Change file mode
 chmod +x some_file.sh
 chmod 0600 /path/to/directory
