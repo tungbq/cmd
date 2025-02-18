@@ -166,9 +166,13 @@ jq '.' file.json | less
 ## Git Commands
 
 ```bash
-# Configure git info, remove '--global' flag if you want to config for project only
+# Configure git info
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
+
+# Remove '--global' flag if you want to config for project only
+git config user.name "Your Name"
+git config user.email "your.email@example.com"
 
 # Verify
 git config -l
