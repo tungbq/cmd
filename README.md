@@ -134,7 +134,11 @@ ssh user@1.2.3.4
 ssh -i user_key.pem user@1.2.3.4
 
 # Use locally available keys to authorise logins on a remote machine
+## Copy default key
 ssh-copy-id user@1.2.3.4
+
+## Copy specific key
+ssh-copy-id -i ~/.ssh/mykey user@host
 ```
 
 [Back to top 🔝](#cli-commands-reference)
