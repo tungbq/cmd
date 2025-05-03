@@ -100,11 +100,17 @@ tracepath google.com
 top
 
 # Tar
+## Compress
 tar -cvf sampleArchive.tar /home/sampleArchive
 
-# Extract
+## Extract
 tar -xvf sampleArchive.tar
 tar -xvf sampleArchive.tar.gz -C /home/ExtractedFiles/
+
+# Unzip
+unzip your_file.zip
+## Specify the output location
+unzip your_file.zip -d target_location
 
 # Control file content
 echo "first line" > file.txt
