@@ -127,6 +127,15 @@ scp -r /path/on/local username@IP:/path/on/remote
 
 # DNS check
 dig domain.com
+
+# Working with logs content
+cat /var/log/syslog
+## Show last 100 lines.
+tail -n 100 /var/log/syslog
+## Show first 100 lines.
+head -n 100 /var/log/syslog
+# Monitor logs live (Ctrl+C to exit).
+tail -f /var/log/syslog
 ```
 
 [Back to top 🔝](#cli-commands-reference)
