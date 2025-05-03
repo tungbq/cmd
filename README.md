@@ -19,7 +19,7 @@ A bookmark of essential command-line commands for a software engineer's daily ta
 - [Azure CLI Commands](#azure-cli-commands)
 - [Powershell Commands](#powershell-commands)
 - [Bash Scripting](#bash-scripting)
-
+- [Vim Shortcuts](#vim-shortcuts)
 ---
 
 ## Linux Commands
@@ -636,6 +636,38 @@ echo "Hello, $name"
 
 # Exit with code
 exit 0
+```
+[Back to top 🔝](#cli-commands-reference)
+
+## Vim Shortcuts
+```
+# Enter insert mode
+i
+
+# Save and exit
+:wq
+:x!
+
+# Exit without saving
+:q!
+
+# Search in file
+/term
+
+# Delete line
+dd
+
+# Copy (yank) line
+yy
+
+# Paste
+p
+
+# Undo
+u
+
+# Redo
+Ctrl + r
 ```
 [Back to top 🔝](#cli-commands-reference)
 
