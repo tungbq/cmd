@@ -18,6 +18,7 @@ A bookmark of essential command-line commands for a software engineer's daily ta
 - [Python Commands](#python-commands)
 - [Azure CLI Commands](#azure-cli-commands)
 - [Powershell Commands](#powershell-commands)
+- [Bash Scripting](#bash-scripting)
 
 ---
 
@@ -599,3 +600,42 @@ Get-WmiObject -Class Win32_Product | Select-Object -Property Name, Version
 ```
  
 [Back to top 🔝](#cli-commands-reference)
+
+## Bash Scripting
+```bash
+# Basic if statement
+if [ "$VAR" = "value" ]; then
+  echo "Match"
+fi
+
+# For loop
+for i in {1..5}; do
+  echo "Number $i"
+done
+
+# While loop
+while true; do
+  echo "Running..."
+  sleep 1
+done
+
+# Script arguments
+echo "Script name: $0"
+echo "First argument: $1"
+
+# Functions
+my_func() {
+  echo "Hello from function"
+}
+
+my_func
+
+# Reading input
+read -p "Enter your name: " name
+echo "Hello, $name"
+
+# Exit with code
+exit 0
+```
+[Back to top 🔝](#cli-commands-reference)
+
