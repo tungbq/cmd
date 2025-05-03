@@ -111,9 +111,13 @@ echo "first line" > file.txt
 echo "second line" >> file.txt
 
 # SCP commands
+## Download file from remote to local machine
 scp -r username@IP:/path/on/remote /path/on/local
 scp -r -i /path/to/key.pem username@IP:/path/on/remote /path/on/local
 scp -r -P 12345 -i /path/to/key.pem username@IP:/path/on/remote /path/on/local
+
+## Send file from local to remote machine
+scp -r /path/on/local username@IP:/path/on/remote
 
 # DNS check
 dig domain.com
