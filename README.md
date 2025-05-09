@@ -20,6 +20,7 @@ A bookmark of essential command-line commands for a software engineer's daily ta
 - [Powershell Commands](#powershell-commands)
 - [Bash Scripting](#bash-scripting)
 - [Vim Shortcuts](#vim-shortcuts)
+
 ---
 
 ## Linux Commands
