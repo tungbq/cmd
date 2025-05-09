@@ -670,4 +670,3 @@ u
 Ctrl + r
 ```
 [Back to top 🔝](#cli-commands-reference)
-
