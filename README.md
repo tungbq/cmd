@@ -428,6 +428,9 @@ terraform refresh
 
 # List the available Terraform providers
 terraform providers
+
+# Unlock Terraform
+terraform force-unlock <LOCK_ID>
 ```
 
 [Back to top 🔝](#cli-commands-reference)
