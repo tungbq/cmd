@@ -393,6 +393,9 @@ ansible-playbook playbook.yml -vvv
 # Initialize a Terraform configuration directory
 terraform init
 
+# Init and migrate TF state files to another location
+terraform init -migrate-state
+
 # Plan the changes required by the Terraform configuration
 terraform plan
 
