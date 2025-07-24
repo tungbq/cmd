@@ -235,6 +235,11 @@ git push origin new-branch
 
 # Reset staging area to match the lastest origin commit
 git reset origin/main
+
+# Checkout content of folder or file from other branch
+git checkout your_branch
+git checkout origin/<other-branch> -- <path_to_folder>/
+git checkout origin/<other-branch> -- <path_to_file>
 ```
 
 [Back to top 🔝](#cli-commands-reference)
