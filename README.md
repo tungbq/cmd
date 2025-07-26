@@ -238,6 +238,7 @@ git reset origin/main
 
 # Checkout content of folder or file from other branch
 git checkout your_branch
+git fetch
 git checkout origin/<other-branch> -- <path_to_folder>/
 git checkout origin/<other-branch> -- <path_to_file>
 ```
