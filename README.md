@@ -670,6 +670,9 @@ i
 # Delete line
 dd
 
+# Delete all content of file
+# (Not in insert mode) Press ggdG
+
 # Copy (yank) line
 yy
 
