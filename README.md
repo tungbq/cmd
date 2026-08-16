@@ -728,7 +728,7 @@ docker stats
 
 # Inspect a container and query a specific field
 docker inspect container-name
-docker inspect -f '{{ .NetworkSettings.IPAddress }}' container-name
+docker inspect container-name | jq -r '.[0].NetworkSettings.IPAddress'
 
 # Copy files in and out of a container
 docker cp container-name:/app/log.txt ./log.txt

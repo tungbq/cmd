@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+
+    <link rel="icon" type="image/png" href="{{ '/assets/cmd.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/cmd.png' | relative_url }}">
+    <meta name="theme-color" content="#0d9488" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <!-- Applies the saved theme before first paint so the page never flashes the wrong colors -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('cmd-theme');
+          if (saved === 'light' || saved === 'dark') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {
+          /* localStorage blocked: fall back to the OS preference */
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a id="skip-to-content" class="skip-link" href="#content">Skip to the content</a>
+
+    <header class="page-header" role="banner">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-prompt" aria-hidden="true">&gt;_</span>
+          <div class="brand-text">
+            <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+            <p class="project-tagline">{{ site.description | default: site.github.project_tagline }}</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a class="btn" href="{{ site.github.repository_url | default: 'https://github.com/tungbq/cmd' }}">
+            <span aria-hidden="true">★</span> View on GitHub
+          </a>
+
+          <!-- Theme switch: OS preference by default, user choice wins and is remembered -->
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="4.5" fill="currentColor"></circle>
+              <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <line x1="12" y1="1.5" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22.5"></line>
+                <line x1="1.5" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22.5" y2="12"></line>
+                <line x1="4.2" y1="4.2" x2="6" y2="6"></line>
+                <line x1="18" y1="18" x2="19.8" y2="19.8"></line>
+                <line x1="19.8" y1="4.2" x2="18" y2="6"></line>
+                <line x1="6" y1="18" x2="4.2" y2="19.8"></line>
+              </g>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M21 13.2A9 9 0 1 1 10.8 3a7.2 7.2 0 0 0 10.2 10.2z"></path>
+            </svg>
+            <span class="theme-toggle-label">Dark</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <span class="site-footer-owner">
+        <a href="{{ site.github.repository_url | default: 'https://github.com/tungbq/cmd' }}">{{ site.github.repository_name | default: 'cmd' }}</a>
+        is maintained by
+        <a href="{{ site.github.owner_url | default: 'https://github.com/tungbq' }}">{{ site.github.owner_name | default: 'tungbq' }}</a>.
+      </span>
+      <span class="site-footer-credits">
+        Contributions are welcome, see the
+        <a href="{{ site.github.repository_url | default: 'https://github.com/tungbq/cmd' }}/blob/main/CONTRIBUTING.md">contributing guide</a>.
+      </span>
+    </footer>
+
+    <a href="#" class="back-to-top-fab" aria-label="Back to top" title="Back to top">↑</a>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var toggle = document.getElementById('theme-toggle');
+        var label = toggle.querySelector('.theme-toggle-label');
+
+        // No stored choice means "follow the OS", so read the media query for the current state
+        function currentTheme() {
+          var explicit = root.getAttribute('data-theme');
+          if (explicit) return explicit;
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function syncLabel() {
+          var isDark = currentTheme() === 'dark';
+          label.textContent = isDark ? 'Light' : 'Dark';
+          toggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+          toggle.setAttribute('aria-pressed', String(isDark));
+        }
+
+        toggle.addEventListener('click', function () {
+          var next = currentTheme() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try {
+            localStorage.setItem('cmd-theme', next);
+          } catch (e) {
+            /* ignore storage failures, the theme still applies for this page */
+          }
+          syncLabel();
+        });
+
+        // Keep following the OS while the visitor has not picked a theme
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () {
+          if (!root.getAttribute('data-theme')) syncLabel();
+        });
+
+        syncLabel();
+
+        // Show the floating back-to-top button only after scrolling away from the header
+        var fab = document.querySelector('.back-to-top-fab');
+        function toggleFab() {
+          fab.classList.toggle('is-visible', window.scrollY > 600);
+        }
+        window.addEventListener('scroll', toggleFab, { passive: true });
+        toggleFab();
+      })();
+    </script>
+  </body>
+</html>
