@@ -5,29 +5,29 @@ A bookmark of essential command-line commands for a software engineer's daily ta
 - Contributing guideline: [**here**](https://github.com/tungbq/cmd/blob/main/CONTRIBUTING.md) 📖
 
 ## Table of Contents
-- [Linux Commands](#linux-commands)
-- [Text Processing Commands](#text-processing-commands)
-- [Networking and Troubleshooting Commands](#networking-and-troubleshooting-commands)
-- [SSH Commands](#ssh-commands)
-- [Tmux Commands](#tmux-commands)
-- [JQ Commands](#jq-commands)
-- [Git Commands](#git-commands)
-- [GitHub CLI Commands](#github-cli-commands)
-- [Docker Commands](#docker-commands)
-- [Kubernetes Commands](#kubernetes-commands)
-- [Helm Commands](#helm-commands)
-- [Ansible Commands](#ansible-commands)
-- [Terraform Commands](#terraform-commands)
-- [PostgreSQL Commands](#postgresql-commands)
-- [MySQL Commands](#mysql-commands)
-- [Redis Commands](#redis-commands)
-- [Python Commands](#python-commands)
-- [Node.js and NPM Commands](#nodejs-and-npm-commands)
-- [Make Commands](#make-commands)
-- [AWS CLI Commands](#aws-cli-commands)
-- [Azure CLI Commands](#azure-cli-commands)
-- [OpenSSL and Certificate Commands](#openssl-and-certificate-commands)
-- [Powershell Commands](#powershell-commands)
+- [Linux ](#linux)
+- [Text Processing ](#text-processing)
+- [Networking and Troubleshooting ](#networking-and-troubleshooting)
+- [SSH ](#ssh)
+- [Tmux ](#tmux)
+- [JQ ](#jq)
+- [Git ](#git)
+- [GitHub CLI ](#github-cli)
+- [Docker ](#docker)
+- [Kubernetes ](#kubernetes)
+- [Helm ](#helm)
+- [Ansible ](#ansible)
+- [Terraform ](#terraform)
+- [PostgreSQL ](#postgresql)
+- [MySQL ](#mysql)
+- [Redis ](#redis)
+- [Python ](#python)
+- [Node.js and NPM ](#nodejs-and-npm)
+- [Make ](#make)
+- [AWS CLI ](#aws-cli)
+- [Azure CLI ](#azure-cli)
+- [OpenSSL and Certificate ](#openssl-and-certificate)
+- [Powershell ](#powershell)
 - [Bash Scripting](#bash-scripting)
 - [Vim Shortcuts](#vim-shortcuts)
 
@@ -205,7 +205,7 @@ head -n 100 /var/log/syslog
 tail -f /var/log/syslog
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Text Processing Commands
 
@@ -265,7 +265,7 @@ wc -l file.txt
 kubectl get pods -A | less
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Networking and Troubleshooting Commands
 
@@ -329,7 +329,7 @@ ip route
 curl -s https://ifconfig.me
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## SSH Commands
 
@@ -393,7 +393,7 @@ ssh-keygen -R 1.2.3.4
 ## Then simply: ssh myserver
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Tmux Commands
 
@@ -431,7 +431,7 @@ tmux kill-session -t mysession
 ## Prefix, then: [
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## JQ Commands
 
@@ -482,7 +482,7 @@ jq -s '.[0] * .[1]' base.json override.json
 jq --arg env "prod" '.configs[] | select(.env == $env)' file.json
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Git Commands
 
@@ -613,7 +613,7 @@ git bisect good <commit_hash>
 git bisect reset
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## GitHub CLI Commands
 
@@ -670,7 +670,7 @@ gh api repos/REPO_OWNER/repo --jq '.stargazers_count'
 gh release create v1.0.0 --generate-notes
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Docker Commands
 
@@ -794,7 +794,7 @@ docker compose restart service-name
 docker compose down -v
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Kubernetes Commands
 
@@ -922,7 +922,7 @@ kubectl delete pod pod-name --grace-period=0 --force
 kubectl explain deployment.spec.template.spec
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Helm Commands
 
@@ -992,7 +992,7 @@ helm lint ./my-chart
 helm dependency update ./my-chart
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Ansible Commands
 
@@ -1061,7 +1061,7 @@ ansible-galaxy collection install community.general
 ansible-lint playbook.yml
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Terraform Commands
 
@@ -1161,7 +1161,7 @@ terraform graph | dot -Tsvg > graph.svg
 terraform providers lock -platform=linux_amd64 -platform=darwin_arm64
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## PostgreSQL Commands
 
@@ -1251,7 +1251,7 @@ psql -c "SELECT relname, pg_size_pretty(pg_total_relation_size(relid)) FROM pg_c
 psql -c "EXPLAIN ANALYZE SELECT * FROM users WHERE email = 'a@b.com';"
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## MySQL Commands
 
@@ -1295,7 +1295,7 @@ mysqladmin -u root -p status
 mysql -u root -p -e "SELECT VERSION();"
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Redis Commands
 
@@ -1339,7 +1339,7 @@ redis-cli SLOWLOG GET 10
 redis-cli FLUSHDB
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Python Commands
 
@@ -1409,7 +1409,7 @@ pipx install black
 uvx ruff check .
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Node.js and NPM Commands
 
@@ -1480,7 +1480,7 @@ nvm use 20
 nvm ls
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Make Commands
 
@@ -1511,7 +1511,7 @@ make -j4
 make -B build
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## AWS CLI Commands
 
@@ -1567,7 +1567,7 @@ aws iam list-roles --output table
 aws iam list-users --output table
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Azure CLI Commands
 
@@ -1639,7 +1639,7 @@ az role assignment list --assignee <object_id> --output table
 az vm create --help
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## OpenSSL and Certificate Commands
 
@@ -1685,7 +1685,7 @@ sha256sum file.zip
 sha256sum -c file.zip.sha256
 ```
 
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## PowerShell Commands
 ```powershell
@@ -1756,7 +1756,7 @@ Restart-Service -Name "ServiceName"
 Get-WmiObject -Class Win32_Product | Select-Object -Property Name, Version
 ```
  
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Bash Scripting
 ```bash
@@ -1872,7 +1872,7 @@ date +"%Y%m%d-%H%M%S"
 # Check a script for common mistakes
 shellcheck script.sh
 ```
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
 
 ## Vim Shortcuts
 ```
@@ -1959,4 +1959,4 @@ V
 # Save a file that needs root permissions
 :w !sudo tee %
 ```
-[Back to top 🔝](#cli-commands-reference)
+[Back to top 🔝](#cli-reference)
