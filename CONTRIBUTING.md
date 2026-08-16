@@ -51,3 +51,22 @@ To contribute a change proposal, use the following workflow:
    4. Wait for your changes to be reviewed. If you are a maintainer, you can assign your PR to one or more reviewers. If you aren't a maintainer, one of the maintainers will assign a reviewer.
    5. After you receive feedback from a reviewer, make the requested changes, commit them to your branch, and push them to your remote fork again.
    6. Once approval is given, feel free to squash & merge!
+
+## Previewing the website locally
+
+All content lives in `README.md`. The website at [tungbq.github.io/cmd](https://tungbq.github.io/cmd) renders that same file through the Jekyll layout in `_layouts/default.html` and the styles in `assets/css/style.css`.
+
+Content changes need no local setup, but if you touch the layout or the styles you can preview the built site with Docker:
+
+```bash
+# Build the site into ./_site
+docker run --rm -v "$PWD":/src -w /src -e PAGES_REPO_NWO=tungbq/cmd \
+  --entrypoint github-pages ghcr.io/actions/jekyll-build-pages:latest \
+  build --destination /src/_site
+
+# Serve it (the site expects the /cmd base path)
+mkdir -p preview && cp -r _site preview/cmd && (cd preview && python3 -m http.server 8000)
+# Then open http://localhost:8000/cmd/
+```
+
+Note: Jekyll runs `README.md` through Liquid, so a command example containing `{{` (for example a Go template in `docker inspect -f`) is parsed as a template tag and that line disappears from the website. Prefer an equivalent that avoids double curly braces.

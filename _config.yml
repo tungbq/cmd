@@ -1,0 +1,24 @@
+title: cmd
+description: A bookmark of essential command-line commands for a software engineer's daily tasks
+lang: en-US
+
+# Project page is served from https://tungbq.github.io/cmd
+url: https://tungbq.github.io
+baseurl: /cmd
+
+plugins:
+  - jekyll-seo-tag
+
+# README.md stays the single source of content, it is rendered with the custom layout
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+
+exclude:
+  # Read on GitHub, and it contains Liquid-like examples that should stay literal
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
